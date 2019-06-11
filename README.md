@@ -20,7 +20,7 @@
 - A user should be able to edit a game.
 - A user should be able to delete a game.
 - When adding a new game/updating an existing the user should be able to select the maturity rating from a pre-populated dropdown list. The maturity options given should be M, T and E.
-- When adding a new game/updating an existing the user should be able to select the genre from a pre-populated list of radio buttons. The maturity options given should be Adventure, Puzzle, Shooter, Arcade and Role Playing.
+- When adding a new game/updating an existing the user should be able to select the genre from a pre-populated list of radio buttons. The genre options given should be Adventure, Puzzle, Shooter, Arcade and Role Playing.
 
 #### Bonus
 - Search for a game by game by Title.
