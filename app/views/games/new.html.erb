@@ -1,0 +1,16 @@
+<h1>Games#new</h1>
+<p>Find me in app/views/games/new.html.erb</p>
+
+<%= form_for @game do |f| %>
+  <%= f.label "Title:"%>
+  <%= f.text_field :title %>
+  <%= f.label "Maturity Rating:"%>
+  <%= f.select :maturity_rating, [["Mature", "M"], ["Teen", "T"], ["Everyone", "E"]], prompt: true %>
+  <%= f.label "Price:"%>
+  <%= f.number_field :price %>
+  <%= f.label "Genre:"%>
+  <%= f.text_field :genre %>
+  <%= f.label "Console:"%>
+  <%= f.collection_select :console_id, @consoles, :id, :name, prompt: "Select a console"%>
+  <%= f.submit %>
+<% end %>

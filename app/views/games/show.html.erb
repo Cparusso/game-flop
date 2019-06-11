@@ -1,0 +1,12 @@
+<h1><%= @game.title %></h1>
+<p>Genre: <%= @game.genre %></p>
+<p>Maturity Rating: <%= @game.maturity_rating %></p>
+<p>Price: $<%= @game.price %>.00</p>
+
+<p>
+  Console: <%= link_to @game.console.name, console_path(@game.console) %>
+</p>
+
+<%= button_to "D3l3te", { action: "destroy", id: @game }, method: :delete, data: { confirm: "Are you sure?" } %>
+<% button_to "D3l3te", game_path(@game), method: :delete, data: { confirm: "Are you sure?" } %>
+<% button_to "D3l3te", @game, method: :delete, data: { confirm: "Are you sure?" } %>
