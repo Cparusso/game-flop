@@ -1,0 +1,9 @@
+<h3><%= @game.title %></h3>
+
+Maturity Rating: <%= @game.maturity_rating %><br>
+Price: <%= "$#{@game.price}" %><br>
+Genre: <%= @game.genre %><br>
+Console: <%= link_to @game.console.name, console_path(@game.console.id) %><br><br>
+
+<%= button_to "Edit Game", edit_game_path, method: "get" %><br>
+<%= button_to "Delete Game", {action: "destroy", controller: "games", id: "#{@game.id}"}, method: "delete" %>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  resources :consoles
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :consoles, only: [:index, :show]
+  resources :games
+
+  get '/search', to: 'games#index'
+
 end

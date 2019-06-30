@@ -1,0 +1,12 @@
+<h3><%= @console.name %></h3>
+By <%= @console.company %><br><br><br>
+
+<label>Games:</label>
+<ul>
+  <% @console.games.each do |game| %>
+    <li><%= link_to game.title, game_path(game.id) %></li><br>
+  <% end %>
+</ul>
+
+<%= button_to "View Consoles", consoles_path, method: "get" %><br>
+<%= button_to "View All Games", games_path, method: "get" %>

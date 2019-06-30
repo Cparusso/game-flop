@@ -1,0 +1,35 @@
+<h3>New Game Form</h3>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <%= "#{error}!" %><br><br>
+  <% end %>
+<% end %>
+
+<%= form_for @game do |f| %>
+<%= f.label "Title:" %>
+<%= f.text_field :title %>
+<%= f.label "Maturity Rating:"%>
+<%= f.collection_select :maturity_rating, Game::MATURITY_RATINGS, :to_s, :to_s %><br><br>
+<%= f.label "Price:" %>
+<%= f.text_field :price %>
+<%= f.label "Console:"%>
+<%= f.collection_select :console_id, @consoles, :id, :name %><br><br>
+Genre: <br>
+<%= f.radio_button :genre, "Adventure" %>
+<%= label :genre, "Adventure" %>
+<%= f.radio_button :genre, "Puzzle" %>
+<%= label :genre, "Puzzle" %>
+<%= f.radio_button :genre, "Shooter" %>
+<%= label :genre, "Shooter" %>
+<%= f.radio_button :genre, "Arcade" %>
+<%= label :genre, "Arcade" %>
+<%= f.radio_button :genre, "Role Playing" %>
+<%= label :genre, "Role Playing" %>
+<br><br>
+<%= f.submit %>
+<% end %>
+
+<br>
+
+<%= button_to "Return to Games", games_path, method: "get" %>

@@ -1,0 +1,9 @@
+<h3>Consoles:</h3>
+
+<ul>
+  <% @consoles.each do |console| %>
+  <li><%= link_to console.name, console_path(console) %></li>
+  <% end %>
+</ul>
+
+<%= button_to "View Games", games_path, method: "get" %>
