@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  maturity_rating: MyString
+  price: 1
+  genre: MyString
+  console_id: 1
+  console: one
+
+two:
+  title: MyString
+  maturity_rating: MyString
+  price: 1
+  genre: MyString
+  console_id: 1
+  console: two

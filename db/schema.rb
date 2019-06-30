@@ -10,13 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_10_192409) do
+ActiveRecord::Schema.define(version: 2019_06_10_224907) do
 
   create_table "consoles", force: :cascade do |t|
     t.string "name"
     t.string "company"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.string "title"
+    t.string "maturity_rating"
+    t.integer "price"
+    t.string "genre"
+    t.integer "console_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["console_id"], name: "index_games_on_console_id"
   end
 
 end

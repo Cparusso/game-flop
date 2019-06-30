@@ -24,36 +24,36 @@ c10 = Console.create(name: "Switch", company: "Nintendo")
 
 puts "Finshed creating Consoles"
 
-# puts "Creating Games"
-#
-# Game.create(title: "Hot Wheels Turbo Racing", maturity_rating: "E", price: 10, genre: "Arcade", console_id: c1.id)
-#
-# Game.create(title: "Shadow of the Colossus", maturity_rating: "T", price: 20, genre: "Adventure", console_id: c2.id)
-# Game.create(title: "Okami", maturity_rating: "E", price: 20, genre: "Adventure", console_id: c2.id)
-#
-# Game.create(title: "God of War III", maturity_rating: "M", price: 30, genre: "Adventure", console_id: c3.id)
-#
-# Game.create(title: "Spider-Man", maturity_rating: "T", price: 60, genre: "Adventure", console_id: c4.id)
-# Game.create(title: "Horizon Zero Dawn", maturity_rating: "T", price: 50, genre: "Adventure", console_id: c4.id)
-# Game.create(title: "Uncharted 4", maturity_rating: "M", price: 40, genre: "Shooter", console_id: c4.id)
-# Game.create(title: "Limbo", maturity_rating: "M", price: 20, genre: "Puzzle", console_id: c4.id)
-#
-# Game.create(title: "Halo: Combat Evolved", maturity_rating: "T", price: 20, genre: "Shooter", console_id: c5.id)
-# Game.create(title: "Odd World: Munches Odyssey", maturity_rating: "T", price: 20, genre: "Puzzle", console_id: c5.id)
-#
-# Game.create(title: "Red Dead Redemption", maturity_rating: "M", price: 45, genre: "Adventure", console_id: c6.id)
-# Game.create(title: "The Elder Scrolls V: Skyrim", maturity_rating: "T", price: 60, genre: "Adventure", console_id: c6.id)
-#
-# Game.create(title: "Anthem", maturity_rating: "M", price: 50, genre: "Adventure", console_id: c7.id)
-# Game.create(title: "Destiny", maturity_rating: "M", price: 50, genre: "Adventure", console_id: c7.id)
-#
-# Game.create(title: "pikmin", maturity_rating: "E", price: 20, genre: "Adventure", console_id: c8.id)
-# Game.create(title: "Super Smash Bros. Mele", maturity_rating: "E", price: 45, genre: "Adventure", console_id: c8.id)
-#
-# Game.create(title: "Super Smash Bros. Brawl", maturity_rating: "E", price: 60, genre: "Adventure", console_id: c9.id)
-# Game.create(title: "Animal Crossing: City Folk", maturity_rating: "E", price: 45, genre: "Adventure", console_id: c9.id)
-#
-# Game.create(title: "The Legend of Zelda: Breath of the Wild", maturity_rating: "E", price: 60, genre: "Adventure", console_id: c10.id)
-# Game.create(title: "Yoshi's Crafted World", maturity_rating: "E", price: 45, genre: "Adventure", console_id: c10.id)
-#
-# puts "Finshed creating Consoles"
+puts "Creating Games"
+
+Game.create(title: "Hot Wheels Turbo Racing", maturity_rating: "E", price: 10, genre: "Arcade", console_id: c1.id)
+
+Game.create(title: "Shadow of the Colossus", maturity_rating: "T", price: 20, genre: "Adventure", console_id: c2.id)
+Game.create(title: "Okami", maturity_rating: "E", price: 20, genre: "Adventure", console_id: c2.id)
+
+Game.create(title: "God of War III", maturity_rating: "M", price: 30, genre: "Adventure", console_id: c3.id)
+
+Game.create(title: "Spider-Man", maturity_rating: "T", price: 60, genre: "Adventure", console_id: c4.id)
+Game.create(title: "Horizon Zero Dawn", maturity_rating: "T", price: 50, genre: "Adventure", console_id: c4.id)
+Game.create(title: "Uncharted 4", maturity_rating: "M", price: 40, genre: "Shooter", console_id: c4.id)
+Game.create(title: "Limbo", maturity_rating: "M", price: 20, genre: "Puzzle", console_id: c4.id)
+
+Game.create(title: "Halo: Combat Evolved", maturity_rating: "T", price: 20, genre: "Shooter", console_id: c5.id)
+Game.create(title: "Odd World: Munches Odyssey", maturity_rating: "T", price: 20, genre: "Puzzle", console_id: c5.id)
+
+Game.create(title: "Red Dead Redemption", maturity_rating: "M", price: 45, genre: "Adventure", console_id: c6.id)
+Game.create(title: "The Elder Scrolls V: Skyrim", maturity_rating: "T", price: 60, genre: "Adventure", console_id: c6.id)
+
+Game.create(title: "Anthem", maturity_rating: "M", price: 50, genre: "Adventure", console_id: c7.id)
+Game.create(title: "Destiny", maturity_rating: "M", price: 50, genre: "Adventure", console_id: c7.id)
+
+Game.create(title: "pikmin", maturity_rating: "E", price: 20, genre: "Adventure", console_id: c8.id)
+Game.create(title: "Super Smash Bros. Mele", maturity_rating: "E", price: 45, genre: "Adventure", console_id: c8.id)
+
+Game.create(title: "Super Smash Bros. Brawl", maturity_rating: "E", price: 60, genre: "Adventure", console_id: c9.id)
+Game.create(title: "Animal Crossing: City Folk", maturity_rating: "E", price: 45, genre: "Adventure", console_id: c9.id)
+
+Game.create(title: "The Legend of Zelda: Breath of the Wild", maturity_rating: "E", price: 60, genre: "Adventure", console_id: c10.id)
+Game.create(title: "Yoshi's Crafted World", maturity_rating: "E", price: 45, genre: "Adventure", console_id: c10.id)
+
+puts "Finshed creating Consoles"
